@@ -70,7 +70,7 @@ $('#formulario').addEventListener('submit', async (e) => {
     }
     console.log('entrou')
     await controller.atualizaFilme(body)
-    window.location.assign('/')
+    window.location.assign('/brsasa_site')
 })
 
 //formulário chique

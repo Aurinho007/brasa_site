@@ -22,7 +22,7 @@ form.addEventListener("submit", async (e) => {
 
     controller
         .adicionaFilme(novoFilme)
-    window.location.assign("/index.html")
+    window.location.assign("/brasa_site")
 });
 
 //formulário chique
