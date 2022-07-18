@@ -173,7 +173,7 @@ export let filmes = [
       
 ]
 
-export function atualizaFilmes() {
+export function getFilmes() {
     let filmesSalvos = localStorage.getItem('filmes');
 
     if(!filmesSalvos) {
@@ -185,7 +185,7 @@ export function atualizaFilmes() {
 }
 
 export function buscaFilmes(){
-    atualizaFilmes()
+    getFilmes()
     return  filmes
 }
 
@@ -197,7 +197,8 @@ export function adicionaFilme(filme) {
 }
 
 export function atualizaFilme(filme) {
-    filmes.splice(parseInt(filme.id) - 1, 1, filme);
+    deletaFilme(filme.id)
+    adicionaFilme(filme)
     limpaLocalStorage();
 }
 
