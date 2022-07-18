@@ -1,0 +1,155 @@
+:root{
+    --black: #32373b;
+    --background: #f0eff4;
+    --btn-color: #ffd600;
+    --white: #fff;
+}
+
+h1 {
+    color: var(--btn-color)
+}
+
+body{
+    color: #fff
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--btn-color); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--btn-color); 
+}
+
+#btn-voltar{
+    background-color: var(--btn-color);
+    color: var(--black);
+    margin-left: 6px;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin-top: 50px
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.form-item input, .form-item select, .form-item textarea {
+    background-color: var(--black);
+    border: none;
+    height: 30px;
+    border-radius: 4px;
+    padding-left: 7px;
+    color: #fff;
+    font-size: .9rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-item input:focus, .form-item select:focus, .form-item textarea:focus {
+    outline: none;
+}
+
+#section2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#section2 .form-item {
+    width: 40%;
+}
+
+#categoria, #classificacao {
+    width: 100%;
+}
+
+#section2 .form-item:nth-child(3) {
+    width: 15%;
+}
+
+
+.form-item textarea {
+    padding: 5px 5px;
+}
+
+#btn-submit{
+    border-radius: 3px;
+    padding: 0 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90px;
+    border: solid var(--btn-color) 2px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Patua One', cursive;
+    cursor: pointer;
+}
+
+
+#section01, #section4, #section5{
+    position: relative;
+    margin-top: 10px;
+}
+
+.label{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    transition: all 0.2s;
+    padding: 0 2px;
+    z-index: 1;
+    color: var(--white);
+    opacity: 0.7;
+}
+
+.input{
+    padding: 0.8rem;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--btn-color);
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.3s;
+    color: #fff;
+
+}
+
+.input:focus{
+    border: 2px solid var(--black);
+}
+
+
+.input:focus + .label,
+.filled{
+    top: -10px;
+    color: var(--white);
+    font-size: 14px;
+    opacity: 1;
+
+    
+}
+
+
+
+
+

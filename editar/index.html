@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/logo.ico">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/editarFilme.css">
+
+    <title>Edita filme - Brasa</title>
+</head>
+
+<body>
+    <header id="header">
+        <div id="img-logo">
+            <img src="../images/logo.png" alt="Imagem da Locadora Brasa">
+            <p>BRASA</p>
+        </div>
+        <div id="container-btn-header">
+            <button class="btn-header" id="btn-voltar" onclick="window.location.assign('/')">Voltar</button>
+        </div>
+    </header>
+
+    <section>
+        <div id="container-pesquisa-filmes">
+            <h1>Informações do filme</h1>
+            <form>
+                <div class="form-item">
+                    <div id="input-pesquisar">
+                        <input class="input" list="datalist-filmes" name="input-pesquisar-filme" id="input-pesquisar-filme" autocomplete="off">
+                        <label for="pesquisar-filme" class="label">Pesquise um filme para editar:</label>
+                        <button id="btn-pesquisar-filme">Pesquisar</button>
+                    </div>
+                    <datalist id="datalist-filmes"></datalist>
+                </div>
+            </form>
+        </div>
+        
+        <div id="container-info-filme">
+            <form id="formulario">
+
+                <div id="section01" class="form-item">
+                    <input class="input" type="text" name="nome" id="nome" size="26" maxlength="26" autocomplete="off"
+                        required>
+                    <label class="label" for="nome">Título do filme</label>
+                </div>
+
+                <div id="section2">
+                    <div class="form-item">
+                        <label for="categoria">Categoria</label>
+                        <select name="categoria" id="categoria" required>
+                            <option value="Ação">Ação</option>
+                            <option value="Aventura">Aventura</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Ficção-Científica">Ficção-Científica</option>
+                            <option value="Fantasia">Fantasia</option>
+                            <option value="Drama">Drama</option>
+                            <option value="Terror">Terror</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="classificacao">Classificação</label>
+                        <select name="classificacao" id="classificacao" required>
+                            <option value="0">Livre</option>
+                            <option value="12">12 anos</option>
+                            <option value="14">14 anos</option>
+                            <option value="16">16 anos</option>
+                            <option value="18">18 anos</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="duracao">Duração</label>
+                        <input type="time" name="duracao" id="duracao" required>
+                    </div>
+                </div>
+
+                <div id="section4" class="form-item">
+                    <input class="input"  id="descricao"  maxlength="50" name="descricao" autocomplete="off" required>
+                    <label class="label" for="descricao">Descrição</label>
+                </div>
+
+                <div id="section5" class="form-item">
+                    <input class="input" type="url" name="cartaz" id="url" autocomplete="off" required>
+                    <label class="label" for="cartaz">URL do cartaz</label>
+                </div>
+
+
+                <br>
+                <button type="submit" id="btn-submit">Salvar Alterações</button>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="../js/editarFilme.js"></script>
+</body>
+
+</html>

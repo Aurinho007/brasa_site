@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página do desafio Let's Code">
+    <link rel="icon" href="./images/logo.ico">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Locadora Brasa</title>
+</head>
+<body>
+
+    <header id="header">
+        <div id="img-logo">
+            <img src="./images/logo.png" alt="Imagem da Locadora Brasa">
+            <p>BRASA</p>
+        </div>
+        <div id="container-btn-header">
+            <button class="btn-header" id="btn-incluir" onclick="window.location.assign('/adicionar')">Incluir</button>
+            <button class="btn-header" id="btn-editar" onclick="window.location.assign('/editar')">Editar</button>
+            <button class="btn-header" id="btn-excluir">Excluir</button>
+            <button class="btn-header" id="btn-cancelar">Cancelar</button>
+        </div>
+    </header>
+
+    <section>
+        <div id="background">
+            <img src="https://assets.nflxext.com/ffe/siteui/vlv3/1ef84595-1fdb-4404-adac-15215ceeb3ae/56ea3d27-5c65-4401-bd14-15b0b210662a/BR-pt-20220711-popsignuptwoweeks-perspective_alpha_website_medium.jpg" alt="">
+            <div id="shadow"></div>
+        </div>
+        
+        <div id="apresentacao">
+            <span id="h1">Bem-vindo(a) ao Brasa!</span> <br> <br>
+            <span id="h5">O maior acervo de filmes da internet,<br> totalmente grátis, totalmente livre ;)</span>
+            <a href="#container-filmes">
+                Ver filmes
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    
+        <!-- <div class="loader">
+            <div class="ball" id="ball-01"></div>
+            <div class="ball" id="ball-02"></div>
+            <div class="ball" id="ball-03"></div>
+        </div> -->
+        
+
+        <div id="container-filmes">
+        </div>
+    </section>
+<script src="./js/view.js" type="module"></script>
+<script>
+    
+</script>
+</body>
+</html>
