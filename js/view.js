@@ -1,5 +1,6 @@
 import * as controller from "./controller.js";
 
+alert("Esta versão da aplicação é limitada a ter um armazenamento de filmes de 5Mb")
 
 let containerFilmes = document.querySelector('#container-filmes');
 
