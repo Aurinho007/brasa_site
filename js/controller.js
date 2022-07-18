@@ -193,6 +193,7 @@ export function adicionaFilme(filme) {
     filme.id = parseInt(filmes[filmes.length-1].id) +1
     filmes.push(filme);
     limpaLocalStorage();
+    alert('Filme adicionado com sucesso!')
 }
 
 export function atualizaFilme(filme) {
@@ -203,6 +204,7 @@ export function atualizaFilme(filme) {
 export function deletaFilme(id) {
     filmes = filmes.filter(f => f.id !== parseInt(id));
     limpaLocalStorage();
+    alert('Filme excluído com sucesso!')
 }
 
 function limpaLocalStorage() {
