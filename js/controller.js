@@ -197,7 +197,7 @@ export function adicionaFilme(filme) {
 }
 
 export function atualizaFilme(filme) {
-    filmes.splice(filme.id - 1, 1, filme);
+    filmes.splice(parseInt(filme.id) - 1, 1, filme);
     limpaLocalStorage();
 }
 
