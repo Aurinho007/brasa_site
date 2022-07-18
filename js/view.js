@@ -59,17 +59,17 @@ function populaView(filmesResponse) {
 function retornaClassificacao(classificacao){
     switch (classificacao){
         case 0:
-            return '../images/classificacoes/livre.jpg'
+            return './images/classificacoes/livre.jpg'
         case 10:
-            return '../images/classificacoes/10.jpg'
+            return './images/classificacoes/10.jpg'
         case 12:
-            return '../images/classificacoes/12.jpg'
+            return './images/classificacoes/12.jpg'
         case 14:
-            return '../images/classificacoes/14.jpg'
+            return './images/classificacoes/14.jpg'
         case 16:
-            return '../images/classificacoes/16.jpg'
+            return './images/classificacoes/16.jpg'
         case 18:
-            return '../images/classificacoes/18.jpg'
+            return './images/classificacoes/18.jpg'
     }
 }
 
