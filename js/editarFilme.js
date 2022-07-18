@@ -68,9 +68,8 @@ $('#formulario').addEventListener('submit', async (e) => {
         cartaz: url.value,
         id: filmeSelecionado.id
     }
-    console.log('entrou')
     await controller.atualizaFilme(body)
-    window.location.assign('/brsasa_site')
+    window.location.assign('/brasa_site')
 })
 
 //formulário chique
